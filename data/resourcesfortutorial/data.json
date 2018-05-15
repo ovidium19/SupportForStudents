@@ -34,7 +34,7 @@
                                 "links": [
                                     {
                                         "text": "Github page for this website",
-                                        "link": "https://github.com/ovidium19/SupportForStudents"
+                                        "link": "https://github.com/ovidium19/ifs-coventry-webapp-template"
                                     }
                                 ]
                             },
@@ -227,7 +227,7 @@
                                     },
                                     {
                                         "portion": "You can find it here",
-                                        "href": "https://github.com/ovidium19/SupportForStudents"
+                                        "href": "https://github.com/ovidium19/ifs-coventry-webapp-template"
                                     }
                                 ],
                                 "text": "This website is available in the format of a github repository. You can find it here. In order to continue at this point, you need to get a copy of this repository into your own github account. In order to do that, there is a process in github called forking a repository.",
@@ -238,7 +238,7 @@
                                 "links": [
                                     {
                                         "portion": "this repository",
-                                        "href": "https://github.com/ovidium19/SupportForStudents"
+                                        "href": "https://github.com/ovidium19/ifs-coventry-webapp-template"
                                     }
                                 ],
                                 "text": "In order to complete this step, you need to fork a copy of the website template page into your own github account. Simply go to this repository and click the 'Fork' button on the top-right side. This process will take several seconds, and then you will end up with a repository in your github account that has the name 'ifs-template-website'."
@@ -715,7 +715,7 @@
                                 "links": [
                                     {
                                         "portion": "Undo Stack",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
+                                        "href": "/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
                                     }
                                 ],
                                 "text": "All of these actions are reversible from the Undo Stack"
@@ -741,7 +741,7 @@
                                 "links": [
                                     {
                                         "portion": "Undo Stack",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
+                                        "href": "/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
                                     }
                                 ],
                                 "text": "All of these actions are reversible from the Undo Stack"
@@ -772,7 +772,7 @@
                                 "links": [
                                     {
                                         "portion": "Undo Stack",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
+                                        "href": "/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
                                     }
                                 ],
                                 "text": "All of these actions are reversible from the Undo Stack"
@@ -798,7 +798,7 @@
                                 "links": [
                                     {
                                         "portion": "Undo Stack",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
+                                        "href": "/content/tutorial/blocks/Admin-Primer/chapter/Undo-Stack"
                                     }
                                 ],
                                 "text": "All of these actions are reversible from the Undo Stack"
@@ -878,7 +878,7 @@
                                 "links": [
                                     {
                                         "portion": "at this link",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Components/chapter/Introduction"
+                                        "href": "/content/tutorial/blocks/Components/chapter/Introduction"
                                     }
                                 ],
                                 "text": "The last tab is custom, based on what type you selected for the component. It is usually named <span class='text-white font-weight-bold bg-info p-1'>{{Type}} Options</span>. Here you can edit all the various properties of a specific component type. You can find more information on component types and their properties at this link."
@@ -1314,7 +1314,7 @@
                                 "links": [
                                     {
                                         "portion": "this tutorial",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Components/chapter/Paragraph"
+                                        "href": "/content/tutorial/blocks/Components/chapter/Paragraph"
                                     }
                                 ],
                                 "text": "The list is simply a collection of paragraphs. See this tutorial to find out about how to edit paragraphs. The order of your paragraphs matters in this case and you can edit them by using the <div class='d-inline text-white' style='opacity:0.7'><span class='fa fa-arrow-up bg-info p-1'></span><span class='fa fa-arrow-down bg-info p-1'></span></div> buttons."
@@ -1798,7 +1798,7 @@
                                         "tip": {
                                             "links": [
                                                 {
-                                                    "href": "http://localhost:8000/content/tutorial/blocks/Getting-the-website-running/chapter/Using-github",
+                                                    "href": "/content/tutorial/blocks/Getting-the-website-running/chapter/Using-github",
                                                     "portion": "this"
                                                 }
                                             ],
@@ -2101,7 +2101,7 @@
                                 "links": [
                                     {
                                         "portion": "Video element",
-                                        "href": "http://localhost:8000/content/tutorial/blocks/Components/chapter/Videos"
+                                        "href": "/content/tutorial/blocks/Components/chapter/Videos"
                                     }
                                 ],
                                 "text": "The first section allows you to edit the Introduction Video. You can change the thumbnail and the video link. Notice that you cannot add a subtitle to this component. The subtitle is not displayed. Apart from that, the interface looks very similar to the Video element discussed before."
