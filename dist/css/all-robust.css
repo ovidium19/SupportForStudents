@@ -28,12 +28,12 @@ div.main-page {
 div.home-container.hide {
   transition: background-position 0.3s;
 }
-@media (max-width: 1020px) {
+@media (max-width: 860px) {
   div.home-container.hide {
     display: none;
   }
 }
-@media screen and (max-height: 760px) {
+@media screen and (max-height: 710px) {
   div.home-container.hide {
     display: none;
   }
@@ -44,7 +44,7 @@ span.overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   display: block;
   z-index: 0;
 }
@@ -62,36 +62,47 @@ div.overlay-content.overlay-flex {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  padding: 15px;
 }
 div.overlay-content p.text-block {
-  padding: 45px;
   position: absolute;
+  text-shadow: 2px 2px 4px #000000;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   justify-self: center;
   font-weight: bold;
-  font-size: 1.2rem;
-  width: 800px;
+  font-size: 1.5rem;
+  width: 75%;
+  min-width: 50%;
   color: white;
 }
-div.overlay-content p.text-block.text-block {
-  background-color: rgba(247, 193, 187, 0.3);
-}
-div.overlay-content p.text-block .carousel-inner {
-  background-color: rgba(247, 193, 187, 0.3);
+div.overlay-content p.text-block p.author {
+  color: rgba(247, 193, 187, 0.9);
 }
 div.overlay-content p.text-block .carousel-indicators li.active {
   background-color: rgba(247, 193, 187, 0.9);
 }
+@media screen and (max-width: 1341px) {
+  div.overlay-content p.text-block {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  div.overlay-content p.text-block {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-height: 650px) {
+  div.overlay-content p.text-block {
+    font-size: 1rem;
+  }
+}
 div.overlay-content .carousel {
   margin-top: 150px;
 }
-div.overlay-content .carousel.text-block {
-  background-color: rgba(247, 193, 187, 0.3);
-}
-div.overlay-content .carousel .carousel-inner {
-  background-color: rgba(247, 193, 187, 0.3);
+div.overlay-content .carousel p.author {
+  color: rgba(247, 193, 187, 0.9);
 }
 div.overlay-content .carousel .carousel-indicators li.active {
   background-color: rgba(247, 193, 187, 0.9);
@@ -130,8 +141,9 @@ div.overlay-content .carousel .carousel-inner p.quote {
   margin: 20px auto;
   color: white;
   font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
   line-height: 1.7;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 div.overlay-content .carousel .carousel-inner p.quote:before,
@@ -154,8 +166,14 @@ div.overlay-content .carousel .carousel-inner p.author {
   font-style: italic;
   font-weight: bold;
   font-size: 1.6rem;
-  color: white;
+  text-shadow: 2px 2px 4px #000000;
   margin-top: 50px;
+}
+div.overlay-content .carousel .carousel-inner p.author p.author {
+  color: rgba(247, 193, 187, 0.9);
+}
+div.overlay-content .carousel .carousel-inner p.author .carousel-indicators li.active {
+  background-color: rgba(247, 193, 187, 0.9);
 }
 .hide-overflow {
   overflow-x: hidden;

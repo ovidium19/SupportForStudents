@@ -147,12 +147,8 @@ DEFAULT:
 }
 //---------------------------------------------------
 .carousel-style() when (@theme=default){
-  &.text-block{
-    background-color:rgba(100,100,255,0.3);
-  }
-  .carousel-inner{
-    background-color:rgba(100,100,255,0.3);
-
+  p.author{
+    color: lighten(rgb(100,100,255),20%);
   }
   .carousel-indicators{
     li.active{
@@ -161,12 +157,8 @@ DEFAULT:
   }
 }
 .carousel-style() when (@theme=ocean){
-  &.text-block{
-    background-color:rgba(244,173,70,0.3);
-  }
-  .carousel-inner{
-    background-color:rgba(244,173,70,0.3);
-
+  p.author{
+    color: rgba(244,173,70,0.9);
   }
   .carousel-indicators{
     li.active{
@@ -175,12 +167,8 @@ DEFAULT:
   }
 }
 .carousel-style() when (@theme=robust){
-  &.text-block{
-    background-color:rgba(247,193,187,0.3);
-  }
-  .carousel-inner{
-    background-color:rgba(247,193,187,0.3);
-
+  p.author{
+    color: rgba(247,193,187,0.9);
   }
   .carousel-indicators{
     li.active{
@@ -216,11 +204,11 @@ div.main-page{
 div.home-container.hide{
 
   transition: background-position 0.3s;
-  @media (max-width: 1020px ){
+  @media (max-width: 860px ){
     display: none;
   }
   @media screen{
-    @media (max-height:760px){
+    @media (max-height:710px){
       display: none;
     }
   }
@@ -231,7 +219,7 @@ span.overlay{
   left:0;
   width:100%;
   height:100%;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.6);
   display: block;
   z-index:0;
 }
@@ -246,18 +234,31 @@ div.overlay-content{
   &.overlay-flex{
     display: flex;
     justify-content: center;
+    padding: 15px;
   }
 
   p.text-block{
     .carousel-style();
-    padding:45px;
     position: absolute;
+    text-shadow: 2px 2px 4px #000000;
     align-self: center;
     justify-self: center;
     font-weight: bold;
-    font-size:1.2rem;
-    width: 800px;
+    font-size:1.5rem;
+    width: 75%;
+    min-width: 50%;
     color: white;
+    @media screen{
+      @media (max-width: 1341px){
+        font-size:1.2rem;
+      }
+      @media (max-width: 800px){
+        font-size:1rem;
+      }
+      @media (max-height: 650px){
+        font-size:1rem;
+      }
+    }
 
   }
   .carousel {
@@ -301,8 +302,9 @@ div.overlay-content{
         margin:20px auto;
         color: white;
         font-weight: bold;
+        text-shadow: 2px 2px 4px #000000;
         line-height: 1.7;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         text-align: center;
         &:before,&:after{
           content: "\201C";
@@ -325,7 +327,8 @@ div.overlay-content{
         font-style: italic;
         font-weight: bold;
         font-size: 1.6rem;
-        color: white;
+        .carousel-style;
+        text-shadow: 2px 2px 4px #000000;
         margin-top:50px;
       }
 

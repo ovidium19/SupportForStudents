@@ -11,7 +11,7 @@
         <div class="overlay-content">
             <div id="carouselQuotes" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li ng-repeat="q in data.quotes" data-target="#carouselQuotes" data-slide-to="{{$index}}" ng-class="{'active': $first}"></li>
+                    <li class="mx-2" ng-repeat="q in data.quotes" data-target="#carouselQuotes" data-slide-to="{{$index}}" ng-class="{'active': $first}"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item" ng-repeat="q in data.quotes" ng-class="{'active' : $first}">
