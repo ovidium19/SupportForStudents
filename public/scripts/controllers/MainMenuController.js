@@ -35,8 +35,6 @@ module.exports = function(application){
                     autoplay: true,
                     interval: 4500
                 });
-                console.log($scope.data.background_up);
-                console.log(`url("${$scope.data.background_down.src}")  no-repeat fixed top center`);
                 //setting image backgrounds
                 $timeout(function(){
                   $(".main-page.one").css({

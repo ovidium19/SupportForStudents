@@ -16,7 +16,7 @@ module.exports = function(application){
       'get': {method: 'GET'}
     });
     var download_resource = $resource("/download");
-    var authenticated = true;
+    var authenticated = false;
     return{
       get: function(conn){
         

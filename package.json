@@ -4,7 +4,7 @@
   "homepage": "http://localhost:8000/",
   "scripts": {
     "share": "lt --port 8000",
-    "start": "set USERNAME=ovidium19 && set PASSWORD=test && set DEBUG=app,app:* && node server/web-server.js",
+    "start": "set DEBUG=app,app:* && node server/web-server.js",
     "start-and-share": "npm-run-all --parallel share start",
     "webpack-watch": "webpack -d --watch",
     "build": "webpack -d",
