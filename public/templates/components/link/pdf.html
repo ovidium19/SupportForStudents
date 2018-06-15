@@ -1,8 +1,17 @@
-<div class="card card-inner">
+<div class="card card-links pt-4">
+    <div class="card-header card-links">
+        {{component.subtitle || 'Related Documents' | uppercase}}
+    </div>
     <div class="card-body py-2">
-        <div class="card-subtitle email-subtitle w-50 text-center" ng-show="component.subtitle">
-            {{component.subtitle}}
+        <div class="link-blocks">
+            <div class="link-block" ng-repeat="mail in component.links">
+                <div class="link-block__inner ">
+                    <span>{{mail.text}}</span>
+                    <i class="fa fa-folder-o"></i>
+                </div>
+            </div>
         </div>
+        <!--
         <div class="card-text" ng-class="{'ifs-media-large': component.straightlink}">
             <div ng-repeat="mail in component.links">
                 <p class="email-tag mr-4 w-50 text-center" ng-show="mail.tag">{{mail.tag}}: </p>
@@ -17,5 +26,6 @@
                 <a class="website-link" href="{{component.straightlink.link}}" title="Go to: {{component.straightlink.link}}" target="_blank">{{component.straightlink.text}}</a>
             </div>
         </div>
+        -->
     </div>
 </div>
