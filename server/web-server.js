@@ -49,8 +49,7 @@ app.get("/assets/css/images/:img",function(req,res){
 });
 app.get("*",function(req,res){
     res.sendFile(rootPath+"/index.html");
-
 });
 files.update();
-app.listen(process.env.PORT || 8000);
+app.listen(process.env.PORT || 4200);
 console.log("Listening on port " + process.env.PORT + "...");
