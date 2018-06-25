@@ -13,8 +13,9 @@
                             {
                                 "subtitle": "",
                                 "type": "text-paragraph",
-                                "text": "This section will introduce the concept of disability, what to expect from employers and how to improve people's awareness of your disability",
-                                "space_after": false
+                                "text": "This section will introduce the concept of disability, what to expect from employers and how to improve people's awareness of your disability.",
+                                "space_after": false,
+                                "links": []
                             }
                         ],
                         "space_after": true

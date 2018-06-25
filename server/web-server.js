@@ -11,13 +11,16 @@ const morgan = require('morgan');
 const debug = require('debug')('app');
 //var lessMiddleware = require('less-middleware');
 var app = express();
+var server = express();
 var bodyParser = require('body-parser');
 var rootPath = path.normalize(__dirname+"/../");
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb',extended:true}));
 
 app.use(morgan('tiny'));
-
+server.use('/interventions-for-success',app);
+server.use(bodyParser.json({limit: '50mb'}));
+server.use(bodyParser.urlencoded({limit: '50mb',extended:true}));
 //app.use(lessMiddleware(path.join(rootPath,"public"),{force:true}));
 app.use(express.static(path.join(rootPath+"public")));
 app.use("/pdf",express.static(path.join(rootPath,"public","pdfs")));
@@ -51,5 +54,12 @@ app.get("*",function(req,res){
     res.sendFile(rootPath+"/index.html");
 });
 files.update();
-app.listen(process.env.PORT || 4200);
+server.get("*",function(req,res){
+  res.redirect("/interventions-for-success"+req.originalUrl);
+  res.end();
+});
+server.post("*",function (req,res) {
+  res.redirect(307, '/interventions-for-success'+req.originalUrl);
+});
+server.listen(80);
 console.log("Listening on port " + process.env.PORT + "...");

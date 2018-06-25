@@ -1,7 +1,7 @@
 {
   "name": "SupportForPeopleWithDisabilities",
   "version": "0.0.1",
-  "homepage": "http://localhost:8000/",
+  "homepage": "http://localhost:8000",
   "scripts": {
     "share": "lt --port 8000",
     "start": "set DEBUG=app,app:* && node server/web-server.js",
