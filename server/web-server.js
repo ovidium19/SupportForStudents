@@ -7,8 +7,10 @@ var downloader = require('./downloader');
 var exists = require('./exists');
 var prerender = require('prerender-node');
 var products = require('./products');
+var env = require('dotenv').config();
 const morgan = require('morgan');
 const debug = require('debug')('app');
+
 //var lessMiddleware = require('less-middleware');
 var app = express();
 var server = express();
@@ -62,4 +64,4 @@ server.post("*",function (req,res) {
   res.redirect(307, '/interventions-for-success'+req.originalUrl);
 });
 server.listen(process.env.PORT || 8080);
-console.log("Listening on port " + process.env.PORT + "...");
+console.log("Listening on port " + process.env.DEBUG + "...");

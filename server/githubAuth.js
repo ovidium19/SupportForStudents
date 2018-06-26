@@ -65,9 +65,11 @@ module.exports.get = function(req,res){
  
 };
 module.exports.localAuth = function(req,res){
+    console.log("going to check for locl authentication");
     //Simplified auth ... just check against env variables
     //localAuth is responsible for checking if the correct username and password have been sent to the server
     let user = req.body;
+    console.log(user);
     if (user.username === process.env.USERNAME.trim() && user.password === process.env.PASSWORD.trim()){
         debug("USers match");
         res.status(200).send({response:true});
@@ -133,8 +135,8 @@ module.exports.getAuth = function(req,res){
   }
 };
 module.exports.localAvailable = function(req,res){
-  debug(process.env.USERNAME);
-  debug(process.env.PASSWORD);
+  console.log(process.env.USERNAME);
+  console.log(process.env.PASSWORD);
     if (process.env.USERNAME && process.env.PASSWORD){
     
         res.send({response: true});

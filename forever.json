@@ -1,0 +1,10 @@
+{
+	"uid": "intforsuccess",
+	"append": true,
+	"logFile": "./forever-log.txt",
+	"outFile": "./forever-out.txt",
+	"errFile": "./forever-err.txt",
+	"script": "./server/web-server.js",
+	"sourceDir": "c:/work/SupportForStudents/",
+	"minUptime": "10000"
+}
