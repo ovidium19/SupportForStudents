@@ -66,7 +66,7 @@ application.config(["$routeProvider","$locationProvider","$compileProvider",
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|file|blob):|data:image\//);
 
     $routeProvider.when("/content/:group/blocks/:blockname/chapter/:chaptername",{
-        templateUrl: "templates/newContent.html",
+        templateUrl: "./templates/newContent.html",
         controller: "MainContentCtrl",
         resolve: {
             dataBlock: function(navigate,dataFetcher,$route){
@@ -133,7 +133,7 @@ application.config(["$routeProvider","$locationProvider","$compileProvider",
             }
         })
         .when("/authenticate",{
-            templateUrl: "templates/authenticate.html",
+            templateUrl: "./templates/authenticate.html",
             controller: "AuthenticateController",
             resolve: {
                 loginLocal: function(github){
@@ -161,7 +161,7 @@ application.config(["$routeProvider","$locationProvider","$compileProvider",
             }
       })
         .when("/admin",{
-            templateUrl: "templates/adminHome.html",
+            templateUrl: "./templates/adminHome.html",
             controller: "AdminController",
             resolveRedirectTo: ["github",function(github){
                 return new Promise((resolve,reject) => {
@@ -198,7 +198,7 @@ application.config(["$routeProvider","$locationProvider","$compileProvider",
         })
         .when("/admini/:group",{
             templateUrl: function(params){
-              return params.group==='mainpage' ? "templates/admin/adminMainPage.html" : "templates/admin/adminHome.html"
+              return params.group==='mainpage' ? "./templates/admin/adminMainPage.html" : "./templates/admin/adminHome.html"
             },
             controller: "AdminInterfaceController",
             resolve: {
@@ -232,7 +232,7 @@ application.config(["$routeProvider","$locationProvider","$compileProvider",
 
         })
         .when("/:group/search",{
-            templateUrl: "templates/searchResults.html",
+            templateUrl: "./templates/searchResults.html",
             controller: "searchController",
             resolve: {
                 query: function($location){
@@ -253,11 +253,11 @@ application.config(["$routeProvider","$locationProvider","$compileProvider",
             }
         })
         .when("/404",{
-            templateUrl: "templates/404.html",
+            templateUrl: "./templates/404.html",
 
         })
         .when("/",{
-            templateUrl : "templates/mainmenu.html",
+            templateUrl : "./templates/mainmenu.html",
             controller: "MainMenuController",
             resolve: {
               dataBlock: function(dataFetcher){

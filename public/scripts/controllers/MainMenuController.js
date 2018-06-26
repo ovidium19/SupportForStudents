@@ -9,12 +9,12 @@ module.exports = function(application){
                  var students = new Image();
                  var educators = new Image();
                  var staff = new Image();
-                 students.src = "/assets/css/images/StudentsOver.png";
-                 educators.src = "/assets/css/images/EducatorsOver.png";
-                 staff.src = "/assets/css/images/StaffOver.png";
+                 students.src = "./assets/css/images/StudentsOver.png";
+                 educators.src = "./assets/css/images/EducatorsOver.png";
+                 staff.src = "./assets/css/images/StaffOver.png";
                  //----------------------------------------
                 $scope.selectGroup = function(group){
-                    $location.url("/content/"+group+"/");
+                    $location.url("./content/"+group+"/");
                 };
                 $scope.data = dataBlock[0];
                 //always scroll top when accessing front page
