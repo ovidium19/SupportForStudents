@@ -14,7 +14,7 @@ module.exports = function(application){
                  staff.src = "./assets/css/images/StaffOver.png";
                  //----------------------------------------
                 $scope.selectGroup = function(group){
-                    $location.url("./content/"+group+"/");
+                    $location.url("/content/"+group+"/");
                 };
                 $scope.data = dataBlock[0];
                 //always scroll top when accessing front page

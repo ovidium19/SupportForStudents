@@ -84,4 +84,4 @@ server.post("*",function (req,res) {
 });
 */
 app.listen(process.env.PORT || 8080);
-console.log("Listening on port " + process.env.DEBUG + "...");
+console.log("Listening on port " + process.env.PORT + "...");
