@@ -137,7 +137,7 @@
                             },
                             {
                                 "type": "media-description",
-                                "src": "images/placeholder.jpg",
+                                "src": "./images/placeholder.jpg",
                                 "name": "Christine Broughan",
                                 "title": "Intervention for Success Project Principal Investigator",
                                 "description": {

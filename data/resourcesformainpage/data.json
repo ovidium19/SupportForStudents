@@ -68,32 +68,32 @@
                 "type": "image-list",
                 "name": "CELE Coventry",
                 "href": "https://cele.coventry.ac.uk",
-                "src": "images/logo_cele.png"
+                "src": "./images/logo_cele.png"
             },
             {
                 "type": "image-list",
                 "name": "Coventry University",
                 "href": "http://www.coventry.ac.uk/",
-                "src": "images/cov_logo.jpg"
+                "src": "./images/cov_logo.jpg"
             }
         ],
         "useful_sites": [
             {
                 "name": "HCPC",
                 "href": "http://www.hpc-uk.org/",
-                "src": "images/hcpc-logo.jpg"
+                "src": "./images/hcpc-logo.jpg"
             },
             {
                 "name": "NMC",
                 "href": "https://www.nmc.org.uk/",
-                "src": "/images/nmc_logo.jpg"
+                "src": "./images/nmc_logo.jpg"
             }
         ],
         "background_up": {
-            "src": "../images/COV-HLS-3307.jpg"
+            "src": "./images/COV-HLS-3307.jpg"
         },
         "background_down": {
-            "src": "../images/COV-HLS-3315.jpg"
+            "src": "./images/COV-HLS-3315.jpg"
         }
     }
 ]
