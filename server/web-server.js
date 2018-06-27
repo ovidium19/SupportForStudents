@@ -27,6 +27,24 @@ app.use(morgan('tiny'));
 app.use(express.static(path.join(rootPath+"public")));
 app.use("/pdf",express.static(path.join(rootPath,"public","pdfs")));
 app.use(prerender.set('prerenderToken','f9W9oNVJetTfG6AyWhJo'));
+app.use(function (req, res, next) {
+  
+  // Website you wish to allow to connect
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost');
+  
+  // Request methods you wish to allow
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  
+  // Request headers you wish to allow
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  
+  // Set to true if you need the website to include cookies in the requests sent
+  // to the API (e.g. in case you use sessions)
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  
+  // Pass to next layer of middleware
+  next();
+});
 app.get("/data/:source",parts.get);
 app.get("/files/:folder",files.get);
 app.get("/github",githubAuth.get);
