@@ -5,6 +5,6 @@
 	"outFile": "./forever-out.txt",
 	"errFile": "./forever-err.txt",
 	"script": "./server/web-server.js",
-	"sourceDir": "c:/work/SupportForStudents/",
+	"sourceDir": "/var/www/projects/SupportForStudents/",
 	"minUptime": "10000"
 }

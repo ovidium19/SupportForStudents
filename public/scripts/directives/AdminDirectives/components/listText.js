@@ -9,7 +9,6 @@ module.exports = function(application){
             },
             controllerAs: 'ctrl',
             controller: ["$scope",function($scope){
-               
                 this.items = $scope.item.element["list_elements"];
                 this.createItems = function(){
                     $scope.item.element["list_elements"] = [{}];

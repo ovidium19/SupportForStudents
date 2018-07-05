@@ -9,7 +9,6 @@ module.exports = function(application){
             template: require('../../../../templates/admin/components/textParagraph.html'),
             link: function(scope,elem,attrs,ctrl){
                 if (attrs.hasOwnProperty('formName')){
-                    console.log($(elem).find('.sub-form'));
                     $(elem).find('.sub-form').attr('name',attrs['form-name']);
                 }
                 
