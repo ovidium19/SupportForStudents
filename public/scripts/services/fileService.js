@@ -3,10 +3,10 @@ module.exports = function(application){
     application.factory("fileService",["$resource","$cacheFactory","$window",function($resource,$cacheFactory,$window){
         "use strict";
         //when we get data, we receive an array, therefore we have to specify isArray in the resource method definition
-        var resource = $resource("/files/:folder",{folder:"@folder"},{
+        var resource = $resource("./files/:folder",{folder:"@folder"},{
             'query': {method: 'GET',isArray: true},
         });
-        var file_resource = $resource("/exists/:type/:filename",{type: "@type",filename: "@filename"});
+        var file_resource = $resource("./exists/:type/:filename",{type: "@type",filename: "@filename"});
         var files = {};
         var urls = {};
         function constructBody(data){
