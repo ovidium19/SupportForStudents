@@ -37,8 +37,8 @@ module.exports = function(application){
                 for (let key of Object.keys(files)){
                     let dir = '';
                     if (files[key].file.type.startsWith('image'))
-                            dir = '/images/';
-                    else dir = '/pdfs/';
+                            dir = 'images/';
+                    else dir = 'pdfs/';
                     for (let ctx of files[key].context){
                         switch (ctx.type){
                             case 'image-single':

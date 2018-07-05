@@ -15,7 +15,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/r_akrqep-os",
-                                    "thumb": "/images/admin-intro.jpg"
+                                    "thumb": "./images/admin-intro.jpg"
                                 }
                             },
                             {
@@ -566,7 +566,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/sdW4gDJKv_s",
-                                    "thumb": "/images/admin-local-auth.jpg"
+                                    "thumb": "./images/admin-local-auth.jpg"
                                 },
                                 "subtitle": "Local Authentication"
                             }
@@ -710,7 +710,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/DIxYidm76Ps",
-                                    "thumb": "/images/admin-terminology.jpg"
+                                    "thumb": "./images/admin-terminology.jpg"
                                 },
                                 "subtitle": "Terminology"
                             }
@@ -1012,7 +1012,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/pZbXjJ-p-FA",
-                                    "thumb": "/images/admin-editing-elements.jpg"
+                                    "thumb": "./images/admin-editing-elements.jpg"
                                 },
                                 "subtitle": "Editing Elements"
                             }
@@ -1058,7 +1058,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/l50QxEnPnvQ",
-                                    "thumb": "/images/admin-undo-stack.jpg"
+                                    "thumb": "./images/admin-undo-stack.jpg"
                                 }
                             }
                         ]
@@ -1109,7 +1109,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/CmV5i8txXDg",
-                                    "thumb": "/images/admin-saving-data.jpg"
+                                    "thumb": "./images/admin-saving-data.jpg"
                                 }
                             }
                         ]
@@ -1305,7 +1305,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/JwmyuAlFDPs",
-                                    "thumb": "/images/admin-uploading-data.jpg"
+                                    "thumb": "./images/admin-uploading-data.jpg"
                                 },
                                 "subtitle": "Uploading Data"
                             }
@@ -1571,7 +1571,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/lWfBok_l3BY",
-                                    "thumb": "/images/admin-list-comp.jpg"
+                                    "thumb": "./images/admin-list-comp.jpg"
                                 },
                                 "subtitle": "List Component"
                             }
@@ -1632,7 +1632,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/4gPWzVi-aZ4",
-                                    "thumb": "/images/admin-link-comp.jpg"
+                                    "thumb": "./images/admin-link-comp.jpg"
                                 },
                                 "subtitle": "Link Component"
                             }
@@ -1689,7 +1689,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/-C7QWmNdZcs",
-                                    "thumb": "/images/admin-image-comp.jpg"
+                                    "thumb": "./images/admin-image-comp.jpg"
                                 },
                                 "subtitle": "Image Component"
                             }
@@ -1873,7 +1873,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/bAJya9gVIgs",
-                                    "thumb": "/images/admin-video-comp.jpg"
+                                    "thumb": "./images/admin-video-comp.jpg"
                                 },
                                 "subtitle": "Video Component"
                             }
@@ -2187,7 +2187,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/FW6nPY1sEXA",
-                                    "thumb": "/images/admin-quiz-comp.jpg"
+                                    "thumb": "./images/admin-quiz-comp.jpg"
                                 },
                                 "subtitle": "Quiz Component"
                             }
@@ -2314,7 +2314,7 @@
                                 "type": "video-single",
                                 "video": {
                                     "src": "https://www.youtube.com/embed/FZCBjPuifZk",
-                                    "thumb": "/images/admin-other-comp.jpg"
+                                    "thumb": "./images/admin-other-comp.jpg"
                                 },
                                 "subtitle": "Other Components"
                             }
@@ -2502,7 +2502,7 @@
                                 "type": "text-paragraph",
                                 "links": [
                                     {
-                                        "href": "/content/tutorial/blocks/Components/chapter/Images",
+                                        "href": "./content/tutorial/blocks/Components/chapter/Images",
                                         "portion": "Image form"
                                     }
                                 ],

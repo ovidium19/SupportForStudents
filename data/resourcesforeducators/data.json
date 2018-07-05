@@ -204,7 +204,7 @@
                                 "phones": [
                                     {
                                         "tag": "Careers and Employability Services",
-                                        "text":"+44 (0)24 7765 8029"
+                                        "text": "+44 (0)24 7765 8029"
                                     }
                                 ],
                                 "space_after": false
@@ -2154,6 +2154,30 @@
                                 "subtitle": "If a student discloses a disability for the first time on placment",
                                 "type": "text-paragraph",
                                 "text": "If a student discloses a disability while on placement, please contact the University placement team to discuss the disclosure and next steps"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Resources",
+                "sections": [
+                    {
+                        "subtitle": "Resources",
+                        "space_after": false,
+                        "components": [
+                            {
+                                "type": "link-pdf",
+                                "links": [
+                                    {
+                                        "link": "pdfs/RCN_guide_for_splds_-_managers_and_practitioners.pdf",
+                                        "text": "RCN_guide_for_splds_-_managers_and_practitioners.pdf"
+                                    },
+                                    {
+                                        "link": "pdfs/Dyslexia Nursing_tool_kitf.pdf",
+                                        "text": "Dyslexia Nursing_tool_kitf.pdf"
+                                    }
+                                ]
                             }
                         ]
                     }
