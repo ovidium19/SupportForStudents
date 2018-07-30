@@ -345,5 +345,6 @@ require('./scripts/directives/textQuote')(application);
 require('./scripts/directives/themeSelector')(application);
 require('./scripts/directives/thoughtBubble')(application);
 require('./scripts/directives/topBar')(application);
+require('./scripts/directives/license')(application);
 require('./scripts/directives/videoCarousel')(application);
 require('./scripts/directives/matchText')(application);

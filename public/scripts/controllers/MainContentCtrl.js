@@ -15,7 +15,8 @@ module.exports = function(application){
             console.log("not a valid URL");
             navigate.errorPage();
         }
-        console.log("Valid URL");
+        $scope.showLicense = /\/about\//.test($location.path());
+        console.log(`We are currently on the about page: ${$scope.showLicense}`);
         var data = navigate.getDataBlock();
         $scope.$emit("$dataWasLoaded",data[0]);
         $scope.data = data[0];
